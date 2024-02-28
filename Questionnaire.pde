@@ -56,5 +56,13 @@ class Button{
       return(false);
     }
   }
+  public boolean clicked(){
+    if(mouseOver()==true && mouseDown == true){
+      return(true);
+    }
+    else{
+      return(false);
+    }
+  }
 }
 //Michael: make a string array for each multiple choice answers in your questionair
