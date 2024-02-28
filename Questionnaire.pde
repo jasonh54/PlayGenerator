@@ -8,27 +8,69 @@ class Questionnaire{
   Button[] routeList=new Button[route.length];
   Button[] otherList=new Button[other.length];
   public Questionnaire(){
-    int x=400;
+    int x=200;
     int y=100;
-    for(int i=0; i<formations.length;i++){
+    for(int i=0; i<6;i++){
+      formationList[i]=new Button(x,y,100,30,formations[i]);
+      y=y+50;
+      
+    }
+    x=500;
+    y=100;
+    for(int i=6; i<formations.length;i++){
       formationList[i]=new Button(x,y,100,30,formations[i]);
       y=y+50;
     }
-    for(int i=0; i<playType.length;i++){
+    x=200;
+    y=100;
+    for(int i=0; i<1;i++){
       playTypeList[i]=new Button(x,y,100,30,playType[i]);
       y=y+50;
     }
-    for(int i=0; i<route.length;i++){
+    x=500;
+    y=100;
+    for(int i=1; i<playType.length;i++){
+      playTypeList[i]=new Button(x,y,100,30,playType[i]);
+      y=y+50;
+    }
+    x=200;
+    y=100;
+    for(int i=0; i<6;i++){
       routeList[i]=new Button(x,y,100,30,route[i]);
       y=y+50;
     }
-    for(int i=0; i<other.length;i++){
+    x=500;
+    y=100;
+    for(int i=6; i<route.length;i++){
+      routeList[i]=new Button(x,y,100,30,route[i]);
+      y=y+50;
+    }
+    x=200;
+    y=100;
+    for(int i=0; i<3;i++){
+      otherList[i]=new Button(x,y,100,30,other[i]);
+      y=y+50;
+    }
+    x=500;
+    y=100;
+    for(int i=3; i<other.length;i++){
       otherList[i]=new Button(x,y,100,30,other[i]);
       y=y+50;
     }
   }
   public void show(){
-  
+    for(int i=0; i<formations.length;i++){
+      formationList[i].show();
+    }  
+    for(int i=0; i<playType.length;i++){
+      playTypeList[i].show();
+    } 
+    for(int i=0; i<route.length;i++){
+      routeList[i].show();
+    } 
+    for(int i=0; i<other.length;i++){
+      otherList[i].show();
+    } 
   }
 }
 class Button{
@@ -56,6 +98,15 @@ class Button{
       return(false);
     }
   }
-  
+
+  public boolean clicked(){
+    if(mouseOver()==true && mouseDown == true){
+      return(true);
+    }
+    else{
+      return(false);
+    }
+  }
+
 }
 //Michael: make a string array for each multiple choice answers in your questionair
