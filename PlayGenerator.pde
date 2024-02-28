@@ -1,6 +1,12 @@
+enum states{
+  questions,
+  plays
+}
+states currentState = states.questions;
 Player p;
 Team t;
 Questionnaire q;
+boolean mouseDown;
 void setup(){
   size(800,800);
   q = new Questionnaire();
@@ -9,7 +15,21 @@ void setup(){
 }
 
 void draw(){
-  q.show();
-  t.doubleWing();
-  t.show();
+  switch(currentState){
+    case questions:
+      q.show();
+    break;
+    case plays:
+      t.doubleWing();
+      t.show();
+    break;
+  }
+  
+
+}
+void mousePressed(){
+  mouseDown = true;
+}
+void mouseReleased(){
+  mouseDown = false;
 }
