@@ -27,6 +27,9 @@ class Questionnaire{
       y=y+50;
     }
   }
+  public void show(){
+  
+  }
 }
 class Button{
   float x,y,w,h;
