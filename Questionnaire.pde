@@ -58,18 +58,39 @@ class Questionnaire{
       y=y+50;
     }
   }
-  public void show(){
+  public void showQ1(){
     for(int i=0; i<formations.length;i++){
       formationList[i].show();
     }  
+  }
+  public void showQ2(){
     for(int i=0; i<playType.length;i++){
       playTypeList[i].show();
     } 
+  }
+  public void showQ3(){
     for(int i=0; i<route.length;i++){
       routeList[i].show();
     } 
-    for(int i=0; i<other.length;i++){
-      otherList[i].show();
+  }
+  public void showQ4(){
+    for(int i=0; i<route.length;i++){
+      routeList[i].show();
+    } 
+  }
+  public void showQ5(){
+    for(int i=0; i<route.length;i++){
+      routeList[i].show();
+    } 
+  }
+  public void showQ6(){
+    for(int i=0; i<route.length;i++){
+      routeList[i].show();
+    } 
+  }
+  public void showQ7(){
+    for(int i=0; i<route.length;i++){
+      routeList[i].show();
     } 
   }
 }
