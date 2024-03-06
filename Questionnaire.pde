@@ -12,51 +12,51 @@ class Questionnaire{
     int x=200;
     int y=100;
     for(int i=0; i<6;i++){
-      formationList[i]=new Button(x,y,100,30,formations[i]);
-      y=y+50;
+      formationList[i]=new Button(x,y,150,80,formations[i]);
+      y=y+100;
       
     }
     x=500;
     y=100;
     for(int i=6; i<formations.length;i++){
-      formationList[i]=new Button(x,y,100,30,formations[i]);
-      y=y+50;
+      formationList[i]=new Button(x,y,150,80,formations[i]);
+      y=y+100;
     }
     x=200;
     y=100;
     for(int i=0; i<1;i++){
-      playTypeList[i]=new Button(x,y,100,30,playType[i]);
+      playTypeList[i]=new Button(x,y,150,80,playType[i]);
       y=y+50;
     }
     x=500;
     y=100;
     for(int i=1; i<playType.length;i++){
-      playTypeList[i]=new Button(x,y,100,30,playType[i]);
-      y=y+50;
+      playTypeList[i]=new Button(x,y,150,80,playType[i]);
+      y=y+100;
     }
     x=200;
     y=100;
     for(int i=0; i<6;i++){
-      routeList[i]=new Button(x,y,100,30,route[i]);
-      y=y+50;
+      routeList[i]=new Button(x,y,150,80,route[i]);
+      y=y+100;
     }
     x=500;
     y=100;
     for(int i=6; i<route.length;i++){
-      routeList[i]=new Button(x,y,100,30,route[i]);
-      y=y+50;
+      routeList[i]=new Button(x,y,150,80,route[i]);
+      y=y+100;
     }
     x=200;
     y=100;
     for(int i=0; i<3;i++){
-      otherList[i]=new Button(x,y,100,30,other[i]);
-      y=y+50;
+      otherList[i]=new Button(x,y,150,80,other[i]);
+      y=y+100;
     }
     x=500;
     y=100;
     for(int i=3; i<other.length;i++){
-      otherList[i]=new Button(x,y,100,30,other[i]);
-      y=y+50;
+      otherList[i]=new Button(x,y,150,80,other[i]);
+      y=y+100;
     }
   }
   public void showQ1(){
@@ -93,7 +93,15 @@ class Questionnaire{
   }
   public void showQ5(){
     textSize(40);
-    text("What is your Z-Receiver/Tight End/Fullback running?",400,50);
+    if(answers[0]=="Trips" || answers[0]=="Twins" || answers[0]=="Singleback" || answers[0]=="Shotgun" || answers[0]=="Pistol" || answers[0]=="Slot T"){
+      text("What is your Z-Receiver running?",400,50);
+    }
+    if(answers[0]=="Doublewing"){
+      text("What is your Tight End running?",400,50);
+    }
+    if(answers[0]=="21 Personnel" || answers[0]=="Pro Set" || answers[0]=="Power I" || answers[0]=="T Formation" || answers[0]=="Wing T"){
+      text("What is your Fullback running?",400,50);
+    }
     textSize(16);
     for(int i=0; i<route.length;i++){
       routeList[i].show();
