@@ -54,11 +54,8 @@ void draw(){
     break;
   }
   
-
+   mouseDown=false;
 }
-void mousePressed(){
+void mouseClicked(){
   mouseDown = true;
-}
-void mouseReleased(){
-  mouseDown = false;
 }

@@ -65,6 +65,10 @@ class Questionnaire{
     textSize(16);
     for(int i=0; i<formations.length;i++){
       formationList[i].show();
+      if(formationList[i].clicked()== true){
+        answers[0] = formationList[i].t;
+        currentState = states.question2;
+      }
     }  
   }
   public void showQ2(){
@@ -73,6 +77,10 @@ class Questionnaire{
     textSize(16);
     for(int i=0; i<playType.length;i++){
       playTypeList[i].show();
+      if(playTypeList[i].clicked()== true){
+        answers[1] = playTypeList[i].t;
+        currentState = states.question3;
+      }
     } 
   }
   public void showQ3(){
@@ -81,6 +89,10 @@ class Questionnaire{
     textSize(16);
     for(int i=0; i<route.length;i++){
       routeList[i].show();
+      if(routeList[i].clicked()== true){
+        answers[2] = routeList[i].t;
+        currentState = states.question4;
+      }
     } 
   }
   public void showQ4(){
@@ -89,6 +101,10 @@ class Questionnaire{
     textSize(16);
     for(int i=0; i<route.length;i++){
       routeList[i].show();
+      if(routeList[i].clicked()== true){
+        answers[3] = routeList[i].t;
+        currentState = states.question5;
+      }
     } 
   }
   public void showQ5(){
@@ -97,6 +113,10 @@ class Questionnaire{
     textSize(16);
     for(int i=0; i<route.length;i++){
       routeList[i].show();
+      if(routeList[i].clicked()== true){
+        answers[4] = routeList[i].t;
+        currentState = states.question6;
+      }
     } 
   }
   public void showQ6(){
@@ -105,6 +125,10 @@ class Questionnaire{
     textSize(16);
     for(int i=0; i<route.length;i++){
       routeList[i].show();
+      if(routeList[i].clicked()== true){
+        answers[5] = routeList[i].t;
+        currentState = states.question7;
+      }
     } 
   }
   public void showQ7(){
@@ -113,6 +137,10 @@ class Questionnaire{
     textSize(16);
     for(int i=0; i<route.length;i++){
       routeList[i].show();
+      if(routeList[i].clicked()== true){
+        answers[6] = routeList[i].t;
+        currentState = states.plays;
+      }
     } 
   }
 }
