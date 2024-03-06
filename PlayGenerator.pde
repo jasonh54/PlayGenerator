@@ -17,7 +17,7 @@ void setup(){
 void draw(){
   switch(currentState){
     case questions:
-      q.show();
+      q.showQ1();
     break;
     case plays:
       t.doubleWing();
