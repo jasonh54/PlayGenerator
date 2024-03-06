@@ -91,7 +91,7 @@ class Button{
     text(t,x+w/2,y+h/2);
   }
   public boolean mouseOver(){
-    if(mouseX >= x && mouseX<= x+w &&mouseY >= y && mouseY<= Y+h){
+    if(mouseX >= x && mouseX<= x+w &&mouseY >= y && mouseY<= y+h){
       return(true);
     }
     else{
@@ -109,4 +109,4 @@ class Button{
   }
 
 }
-//Michael: make a string array for each multiple choice answers in your questionair
+//Michael: Explain how I want questioannire to be
