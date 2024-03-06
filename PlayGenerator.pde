@@ -22,6 +22,7 @@ void setup(){
 }
 
 void draw(){
+  background(100);
   switch(currentState){
     case questions:
       q.showQ1();

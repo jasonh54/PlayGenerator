@@ -60,36 +60,57 @@ class Questionnaire{
     }
   }
   public void showQ1(){
+    textSize(40);
+    text("What is the formation?",400,50);
+    textSize(16);
     for(int i=0; i<formations.length;i++){
       formationList[i].show();
     }  
   }
   public void showQ2(){
+    textSize(40);
+    text("Is it a pass or run play?",400,50);
+    textSize(16);
     for(int i=0; i<playType.length;i++){
       playTypeList[i].show();
     } 
   }
   public void showQ3(){
+    textSize(40);
+    text("What is your X-Receiver running?",400,50);
+    textSize(16);
     for(int i=0; i<route.length;i++){
       routeList[i].show();
     } 
   }
   public void showQ4(){
+    textSize(40);
+    text("What is your Y-Receiver running?",400,50);
+    textSize(16);
     for(int i=0; i<route.length;i++){
       routeList[i].show();
     } 
   }
   public void showQ5(){
+    textSize(40);
+    text("What is your Z-Receiver/Tight End/Fullback running?",400,50);
+    textSize(16);
     for(int i=0; i<route.length;i++){
       routeList[i].show();
     } 
   }
   public void showQ6(){
+    textSize(40);
+    text("What is your Tight End running?",400,50);
+    textSize(16);
     for(int i=0; i<route.length;i++){
       routeList[i].show();
     } 
   }
   public void showQ7(){
+    textSize(40);
+    text("What is your Runningback running?",400,50);
+    textSize(16);
     for(int i=0; i<route.length;i++){
       routeList[i].show();
     } 
