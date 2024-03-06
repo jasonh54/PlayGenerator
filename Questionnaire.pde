@@ -7,6 +7,7 @@ class Questionnaire{
   Button[] playTypeList=new Button[playType.length];
   Button[] routeList=new Button[route.length];
   Button[] otherList=new Button[other.length];
+  String[] answers = new String[7];
   public Questionnaire(){
     int x=200;
     int y=100;
