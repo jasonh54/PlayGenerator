@@ -27,18 +27,25 @@ void draw(){
       q.showQ1();
     break;
     case question1:
+      q.showQ1();
     break;
     case question2:
+      q.showQ2();
     break;
     case question3:
+      q.showQ3();
     break;
     case question4:
+      q.showQ4();
     break;
     case question5:
+      q.showQ5();
     break;
     case question6:
+      q.showQ6();
     break;
     case question7:
+      q.showQ7();
     break;
     case plays:
       t.doubleWing();
