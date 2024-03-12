@@ -10,7 +10,7 @@ enum states{
   generate,
   plays
 }
-states currentState = states.questions;
+states currentState = states.plays;
 Player p;
 Team t;
 Questionnaire q;
@@ -91,7 +91,7 @@ void draw(){
       
     break;
     case plays:
-      
+      t.twins();
       t.show();
     break;
   }
