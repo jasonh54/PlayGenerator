@@ -3,10 +3,14 @@ class Questionnaire{
   String[] playType={"Pass", "Run"};
   String[] route={"Post", "Corner", "Go", "Curl", "Comeback", "In", "Out", "Slant", "Hitch", "Wheel", "Flat"};
   String[] other={"Strong","Quick","Agile","Good Hands","Tall","Good Blocker"};
+  String[] direction={"Right","Left"};
+  String[] inNOut={"Inside","Outside"};
   Button[] formationList=new Button[formations.length];
   Button[] playTypeList=new Button[playType.length];
   Button[] routeList=new Button[route.length];
   Button[] otherList=new Button[other.length];
+  Button[] directionList=new Button[direction.length];
+  Button[] inNOutList=new Button[inNOut.length];
   String[] answers = new String[7];
   public Questionnaire(){
     int x=200;
@@ -58,6 +62,30 @@ class Questionnaire{
       otherList[i]=new Button(x,y,150,80,other[i]);
       y=y+100;
     }
+    x=200;
+    y=100;
+    for(int i=0; i<1;i++){
+      directionList[i]=new Button(x,y,150,80,direction[i]);
+      y=y+100;
+    }
+    x=500;
+    y=100;
+    for(int i=1; i<direction.length;i++){
+      directionList[i]=new Button(x,y,150,80,direction[i]);
+      y=y+100;
+    }
+    x=200;
+    y=100;
+    for(int i=0; i<1;i++){
+      inNOutList[i]=new Button(x,y,150,80,inNOut[i]);
+      y=y+100;
+    }
+    x=500;
+    y=100;
+    for(int i=1; i<inNOut.length;i++){
+      inNOutList[i]=new Button(x,y,150,80,inNOut[i]);
+      y=y+100;
+    }
   }
   public void showQ1(){
     textSize(40);
@@ -85,71 +113,75 @@ class Questionnaire{
   }
   public void showQ3(){
     textSize(40);
-    text("What is your X-Receiver running?",400,50);
-    textSize(16);
-    for(int i=0; i<route.length;i++){
-      routeList[i].show();
-      if(routeList[i].clicked()== true){
-        answers[2] = routeList[i].t;
-        currentState = states.question4;
+    if(answers[1]=="Pass"){
+      text("What is your X-Receiver running?",400,50);
+      textSize(16);
+      for(int i=0; i<route.length;i++){
+        routeList[i].show();
+      } 
+    }
+    if(answers[1]=="Run"){
+      text("Which way is your running back running?",400,50);
+      textSize(16);
+      for(int i=0; i<direction.length;i++){
+        directionList[i].show();
       }
-    } 
+    }
   }
   public void showQ4(){
     textSize(40);
-    text("What is your Y-Receiver running?",400,50);
-    textSize(16);
-    for(int i=0; i<route.length;i++){
-      routeList[i].show();
-      if(routeList[i].clicked()== true){
-        answers[3] = routeList[i].t;
-        currentState = states.question5;
+    if(answers[1]=="Pass"){
+      text("What is your Y-Receiver running?",400,50);
+      textSize(16);
+      for(int i=0; i<route.length;i++){
+        routeList[i].show();
+      } 
+    }
+    if(answers[1]=="Run"){
+      text("Are you running to the inside or outside",400,50);
+      textSize(16);
+      for(int i=0; i<inNOut.length;i++){
+        inNOutList[i].show();
       }
-    } 
+    }
   }
   public void showQ5(){
     textSize(40);
-    if(answers[0]=="Trips" || answers[0]=="Twins" || answers[0]=="Singleback" || answers[0]=="Shotgun" || answers[0]=="Pistol" || answers[0]=="Slot T"){
-      text("What is your Z-Receiver running?",400,50);
-    }
-    if(answers[0]=="Doublewing"){
-      text("What is your Tight End running?",400,50);
-    }
-    if(answers[0]=="21 Personnel" || answers[0]=="Pro Set" || answers[0]=="Power I" || answers[0]=="T Formation" || answers[0]=="Wing T"){
-      text("What is your Fullback running?",400,50);
-    }
-    textSize(16);
-    for(int i=0; i<route.length;i++){
-      routeList[i].show();
-      if(routeList[i].clicked()== true){
-        answers[4] = routeList[i].t;
-        currentState = states.question6;
+    if(answers[1]=="Pass"){
+      if(answers[0]=="Trips" || answers[0]=="Twins" || answers[0]=="Singleback" || answers[0]=="Shotgun" || answers[0]=="Pistol" || answers[0]=="Slot T"){
+        text("What is your Z-Receiver running?",400,50);
       }
-    } 
+      if(answers[0]=="Doublewing"){
+        text("What is your Tight End running?",400,50);
+      }
+      if(answers[0]=="21 Personnel" || answers[0]=="Pro Set" || answers[0]=="Power I" || answers[0]=="T Formation" || answers[0]=="Wing T"){
+        text("What is your Fullback running?",400,50);
+      }
+      textSize(16);
+      for(int i=0; i<route.length;i++){
+        routeList[i].show();
+      } 
+    }
   }
   public void showQ6(){
     textSize(40);
-    text("What is your Tight End running?",400,50);
-    textSize(16);
-    for(int i=0; i<route.length;i++){
-      routeList[i].show();
-      if(routeList[i].clicked()== true){
-        answers[5] = routeList[i].t;
-        currentState = states.question7;
-      }
-    } 
+    if(answers[1]=="Pass"){
+      text("What is your Tight End running?",400,50);
+      textSize(16);
+      for(int i=0; i<route.length;i++){
+        routeList[i].show();
+      } 
+    }
   }
   public void showQ7(){
     textSize(40);
-    text("What is your Runningback running?",400,50);
-    textSize(16);
-    for(int i=0; i<route.length;i++){
-      routeList[i].show();
-      if(routeList[i].clicked()== true){
-        answers[6] = routeList[i].t;
-        currentState = states.generate;
-      }
-    } 
+    if(answers[1]=="Pass"){
+      text("What is your Runningback running?",400,50);
+      textSize(16);
+      for(int i=0; i<route.length;i++){
+        routeList[i].show();
+      } 
+    }
   }
 }
 class Button{
