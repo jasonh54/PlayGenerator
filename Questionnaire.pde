@@ -118,6 +118,10 @@ class Questionnaire{
       textSize(16);
       for(int i=0; i<route.length;i++){
         routeList[i].show();
+        if(routeList[i].clicked()== true){
+          answers[2] = routeList[i].t;
+          currentState = states.question4;
+        }
       } 
     }
     if(answers[1]=="Run"){
@@ -125,6 +129,10 @@ class Questionnaire{
       textSize(16);
       for(int i=0; i<direction.length;i++){
         directionList[i].show();
+        if(directionList[i].clicked()== true){
+          answers[2] = directionList[i].t;
+          currentState = states.question4;
+        }
       }
     }
   }
@@ -135,6 +143,10 @@ class Questionnaire{
       textSize(16);
       for(int i=0; i<route.length;i++){
         routeList[i].show();
+        if(routeList[i].clicked()== true){
+          answers[3] = routeList[i].t;
+          currentState = states.question4;
+        }
       } 
     }
     if(answers[1]=="Run"){
@@ -142,6 +154,10 @@ class Questionnaire{
       textSize(16);
       for(int i=0; i<inNOut.length;i++){
         inNOutList[i].show();
+        if(inNOutList[i].clicked()== true){
+          answers[3] = inNOutList[i].t;
+          currentState = states.generate;
+        }
       }
     }
   }
@@ -160,7 +176,14 @@ class Questionnaire{
       textSize(16);
       for(int i=0; i<route.length;i++){
         routeList[i].show();
+        if(routeList[i].clicked()== true){
+          answers[4] = routeList[i].t;
+          currentState = states.question4;
+        }
       } 
+    }
+    else{
+      currentState=states.generate;
     }
   }
   public void showQ6(){
@@ -170,7 +193,14 @@ class Questionnaire{
       textSize(16);
       for(int i=0; i<route.length;i++){
         routeList[i].show();
+        if(routeList[i].clicked()== true){
+          answers[5] = routeList[i].t;
+          currentState = states.question4;
+        }
       } 
+    }
+    else{
+      currentState=states.generate;
     }
   }
   public void showQ7(){
@@ -180,7 +210,14 @@ class Questionnaire{
       textSize(16);
       for(int i=0; i<route.length;i++){
         routeList[i].show();
+        if(routeList[i].clicked()== true){
+          answers[6] = routeList[i].t;
+          currentState = states.question4;
+        }
       } 
+    }
+    else{
+      currentState=states.generate;
     }
   }
 }
