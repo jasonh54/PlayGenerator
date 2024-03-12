@@ -7,6 +7,7 @@ enum states{
   question5,
   question6,
   question7,
+  generate,
   plays
 }
 states currentState = states.questions;
@@ -48,8 +49,16 @@ void draw(){
     case question7:
       q.showQ7();
     break;
+    case generate:
+      //finish this
+      if(q.answers[0]=="Double Wing"){
+        t.doubleWing();
+      }
+      currentState=states.plays;
+      
+    break;
     case plays:
-      t.doubleWing();
+      
       t.show();
     break;
   }

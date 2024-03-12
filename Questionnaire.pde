@@ -147,7 +147,7 @@ class Questionnaire{
       routeList[i].show();
       if(routeList[i].clicked()== true){
         answers[6] = routeList[i].t;
-        currentState = states.plays;
+        currentState = states.generate;
       }
     } 
   }
