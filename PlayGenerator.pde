@@ -19,7 +19,7 @@ void setup(){
   size(800,800);
   q = new Questionnaire();
   p = new Player(400,400);
-  t = new Team();
+  t = new Team();  
 }
 
 void draw(){
@@ -51,6 +51,39 @@ void draw(){
     break;
     case generate:
       //finish this
+      if(q.answers[0]=="Trips"){
+        t.trips();
+      }
+      if(q.answers[0]=="Twins"){
+        t.twins();
+      }
+      if(q.answers[0]=="21 Personnel"){
+        t.twentyOnePersonnel();
+      }
+      if(q.answers[0]=="Pro Set"){
+        t.proSet();
+      }
+      if(q.answers[0]=="Singleback"){
+        t.singleback();
+      }
+      if(q.answers[0]=="Power I"){
+        t.iFormation();
+      }
+      if(q.answers[0]=="T Formation"){
+        t.tFormation();
+      }
+      if(q.answers[0]=="Shotgun"){
+        t.shotgun();
+      }
+      if(q.answers[0]=="Pistol"){
+        t.pistol();
+      }
+      if(q.answers[0]=="Wing T"){
+        t.wingT();
+      }
+      if(q.answers[0]=="Slot T"){
+        t.slotT();
+      }
       if(q.answers[0]=="Double Wing"){
         t.doubleWing();
       }
