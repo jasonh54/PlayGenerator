@@ -93,6 +93,10 @@ class Questionnaire{
     textSize(16);
     for(int i=0; i<formations.length;i++){
       formationList[i].show();
+      if(formationList[i].clicked()== true){
+        answers[0] = formationList[i].t;
+        currentState = states.question2;
+      }
     }  
   }
   public void showQ2(){
@@ -101,6 +105,10 @@ class Questionnaire{
     textSize(16);
     for(int i=0; i<playType.length;i++){
       playTypeList[i].show();
+      if(playTypeList[i].clicked()== true){
+        answers[1] = playTypeList[i].t;
+        currentState = states.question3;
+      }
     } 
   }
   public void showQ3(){
