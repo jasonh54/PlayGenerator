@@ -66,6 +66,22 @@ class Player {
     line(x,y,x-50,y-50);
     line(x-50,y-50,x-50,y-150);
   }
+  public void leftIn(){
+    line(x,y,x+20,y-200);
+    line(x+20,y-20,x+20,y-150);
+  }
+  public void rightIn(){
+    line(x,y,x-20,y-200);
+    line(x-20,y-20,x+20,y-150);
+  }
+  public void leftOut(){
+    line(x,y,x+50,y-50);
+    line(x+50,y-50,x+50,y-150);
+  }
+  public void rightOut(){
+    line(x,y,x-50,y-50);
+    line(x-50,y-50,x-50,y-150);
+  }
 }
 class Team {
   ArrayList<Player> team;
@@ -232,6 +248,18 @@ class Team {
   public void show() {
     for (int i=0; i<team.size(); i++) {
       team.get(i).show();
+      if(team.get(i).r=="RB" && q.answers[2]=="Right" && q.answers[3]=="Inside"){
+        team.get(i).rightIn(); 
+      }
+      if(team.get(i).r=="RB" && q.answers[2]=="Right" && q.answers[3]=="Outside"){
+        team.get(i).rightOut(); 
+      }
+      if(team.get(i).r=="RB" && q.answers[2]=="Left" && q.answers[3]=="Inside"){
+        team.get(i).leftIn(); 
+      }
+      if(team.get(i).r=="RB" && q.answers[2]=="Left" && q.answers[3]=="Outside"){
+        team.get(i).leftOut(); 
+      }
       if(team.get(i).r=="X" && q.answers[2]=="Post"){
         team.get(i).post(); 
       }
