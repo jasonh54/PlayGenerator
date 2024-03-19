@@ -167,10 +167,10 @@ class Questionnaire{
       if(answers[0]=="Trips" || answers[0]=="Twins" || answers[0]=="Singleback" || answers[0]=="Shotgun" || answers[0]=="Pistol" || answers[0]=="Slot T"){
         text("What is your Z-Receiver running?",400,50);
       }
-      if(answers[0]=="Doublewing"){
+      else if(answers[0]=="Double Wing"){
         text("What is your Tight End running?",400,50);
       }
-      if(answers[0]=="21 Personnel" || answers[0]=="Pro Set" || answers[0]=="Power I" || answers[0]=="T Formation" || answers[0]=="Wing T"){
+      else if(answers[0]=="21 Personnel" || answers[0]=="Pro Set" || answers[0]=="Power I" || answers[0]=="T Formation" || answers[0]=="Wing T"){
         text("What is your Fullback running?",400,50);
       }
       textSize(16);

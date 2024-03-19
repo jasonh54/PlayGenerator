@@ -232,7 +232,204 @@ class Team {
   public void show() {
     for (int i=0; i<team.size(); i++) {
       team.get(i).show();
+      if(team.get(i).r=="X" && q.answers[2]=="Post"){
+        team.get(i).post(); 
+      }
+      if(team.get(i).r=="X" && q.answers[2]=="Corner"){
+        team.get(i).corner(); 
+      }
+      if(team.get(i).r=="X" && q.answers[2]=="Curl"){
+        team.get(i).curl(); 
+      }
+      if(team.get(i).r=="X" && q.answers[2]=="Comeback"){
+        team.get(i).comeback(); 
+      }
+      if(team.get(i).r=="X" && q.answers[2]=="Go"){
+        team.get(i).go(); 
+      }
+      if(team.get(i).r=="X" && q.answers[2]=="Hitch"){
+        team.get(i).hitch(); 
+      }
+      if(team.get(i).r=="X" && q.answers[2]=="Slant"){
+        team.get(i).slant(); 
+      }
+      if(team.get(i).r=="X" && q.answers[2]=="Flat"){
+        team.get(i).flat(); 
+      }
+      if(team.get(i).r=="X" && q.answers[2]=="Wheel"){
+        team.get(i).wheel(); 
+      }
+      if(team.get(i).r=="X" && q.answers[2]=="In"){
+        team.get(i).in(); 
+      }
+      if(team.get(i).r=="X" && q.answers[2]=="Out"){
+        team.get(i).out(); 
+      }
+      if(team.get(i).r=="Y" && q.answers[2]=="Post"){
+        team.get(i).post(); 
+      }
+      if(team.get(i).r=="Y" && q.answers[2]=="Corner"){
+        team.get(i).corner(); 
+      }
+      if(team.get(i).r=="Y" && q.answers[2]=="Curl"){
+        team.get(i).curl(); 
+      }
+      if(team.get(i).r=="Y" && q.answers[2]=="Comeback"){
+        team.get(i).comeback(); 
+      }
+      if(team.get(i).r=="Y" && q.answers[2]=="Go"){
+        team.get(i).go(); 
+      }
+      if(team.get(i).r=="Y" && q.answers[2]=="Hitch"){
+        team.get(i).hitch(); 
+      }
+      if(team.get(i).r=="Y" && q.answers[2]=="Slant"){
+        team.get(i).slant(); 
+      }
+      if(team.get(i).r=="Y" && q.answers[2]=="Flat"){
+        team.get(i).flat(); 
+      }
+      if(team.get(i).r=="Y" && q.answers[2]=="Wheel"){
+        team.get(i).wheel(); 
+      }
+      if(team.get(i).r=="Y" && q.answers[2]=="In"){
+        team.get(i).in(); 
+      }
+      if(team.get(i).r=="Y" && q.answers[2]=="Out"){
+        team.get(i).out(); 
+      }
+      if(team.get(i).r=="Z" && q.answers[2]=="Post"){
+        team.get(i).post(); 
+      }
+      if(team.get(i).r=="Z" && q.answers[2]=="Corner"){
+        team.get(i).corner(); 
+      }
+      if(team.get(i).r=="Z" && q.answers[2]=="Curl"){
+        team.get(i).curl(); 
+      }
+      if(team.get(i).r=="Z" && q.answers[2]=="Comeback"){
+        team.get(i).comeback(); 
+      }
+      if(team.get(i).r=="Z" && q.answers[2]=="Go"){
+        team.get(i).go(); 
+      }
+      if(team.get(i).r=="Z" && q.answers[2]=="Hitch"){
+        team.get(i).hitch(); 
+      }
+      if(team.get(i).r=="Z" && q.answers[2]=="Slant"){
+        team.get(i).slant(); 
+      }
+      if(team.get(i).r=="Z" && q.answers[2]=="Flat"){
+        team.get(i).flat(); 
+      }
+      if(team.get(i).r=="Z" && q.answers[2]=="Wheel"){
+        team.get(i).wheel(); 
+      }
+      if(team.get(i).r=="Z" && q.answers[2]=="In"){
+        team.get(i).in(); 
+      }
+      if(team.get(i).r=="Z" && q.answers[2]=="Out"){
+        team.get(i).out(); 
+      }
+      if(team.get(i).r=="FB" && q.answers[2]=="Post"){
+        team.get(i).post(); 
+      }
+      if(team.get(i).r=="FB" && q.answers[2]=="Corner"){
+        team.get(i).corner(); 
+      }
+      if(team.get(i).r=="FB" && q.answers[2]=="Curl"){
+        team.get(i).curl(); 
+      }
+      if(team.get(i).r=="FB" && q.answers[2]=="Comeback"){
+        team.get(i).comeback(); 
+      }
+      if(team.get(i).r=="FB" && q.answers[2]=="Go"){
+        team.get(i).go(); 
+      }
+      if(team.get(i).r=="FB" && q.answers[2]=="Hitch"){
+        team.get(i).hitch(); 
+      }
+      if(team.get(i).r=="FB" && q.answers[2]=="Slant"){
+        team.get(i).slant(); 
+      }
+      if(team.get(i).r=="FB" && q.answers[2]=="Flat"){
+        team.get(i).flat(); 
+      }
+      if(team.get(i).r=="FB" && q.answers[2]=="Wheel"){
+        team.get(i).wheel(); 
+      }
+      if(team.get(i).r=="FB" && q.answers[2]=="In"){
+        team.get(i).in(); 
+      }
+      if(team.get(i).r=="FB" && q.answers[2]=="Out"){
+        team.get(i).out(); 
+      }
+      if(team.get(i).r=="RB" && q.answers[2]=="Post"){
+        team.get(i).post(); 
+      }
+      if(team.get(i).r=="RB" && q.answers[2]=="Corner"){
+        team.get(i).corner(); 
+      }
+      if(team.get(i).r=="RB" && q.answers[2]=="Curl"){
+        team.get(i).curl(); 
+      }
+      if(team.get(i).r=="RB" && q.answers[2]=="Comeback"){
+        team.get(i).comeback(); 
+      }
+      if(team.get(i).r=="RB" && q.answers[2]=="Go"){
+        team.get(i).go(); 
+      }
+      if(team.get(i).r=="RB" && q.answers[2]=="Hitch"){
+        team.get(i).hitch(); 
+      }
+      if(team.get(i).r=="RB" && q.answers[2]=="Slant"){
+        team.get(i).slant(); 
+      }
+      if(team.get(i).r=="RB" && q.answers[2]=="Flat"){
+        team.get(i).flat(); 
+      }
+      if(team.get(i).r=="RB" && q.answers[2]=="Wheel"){
+        team.get(i).wheel(); 
+      }
+      if(team.get(i).r=="RB" && q.answers[2]=="In"){
+        team.get(i).in(); 
+      }
+      if(team.get(i).r=="RB" && q.answers[2]=="Out"){
+        team.get(i).out(); 
+      }
+      if(team.get(i).r=="TE" && q.answers[2]=="Post"){
+        team.get(i).post(); 
+      }
+      if(team.get(i).r=="TE" && q.answers[2]=="Corner"){
+        team.get(i).corner(); 
+      }
+      if(team.get(i).r=="TE" && q.answers[2]=="Curl"){
+        team.get(i).curl(); 
+      }
+      if(team.get(i).r=="TE" && q.answers[2]=="Comeback"){
+        team.get(i).comeback(); 
+      }
+      if(team.get(i).r=="TE" && q.answers[2]=="Go"){
+        team.get(i).go(); 
+      }
+      if(team.get(i).r=="TE" && q.answers[2]=="Hitch"){
+        team.get(i).hitch(); 
+      }
+      if(team.get(i).r=="TE" && q.answers[2]=="Slant"){
+        team.get(i).slant(); 
+      }
+      if(team.get(i).r=="TE" && q.answers[2]=="Flat"){
+        team.get(i).flat(); 
+      }
+      if(team.get(i).r=="TE" && q.answers[2]=="Wheel"){
+        team.get(i).wheel(); 
+      }
+      if(team.get(i).r=="TE" && q.answers[2]=="In"){
+        team.get(i).in(); 
+      }
+      if(team.get(i).r=="TE" && q.answers[2]=="Out"){
+        team.get(i).out(); 
+      }
     }
   }
-
 }
