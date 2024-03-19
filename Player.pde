@@ -21,6 +21,51 @@ class Player {
     text(r,x,y);
     
   }
+  public void post(){
+    line(x,y,x,y-100);
+    line(x,y-100,x-50,y-150);
+  }
+  public void corner(){
+    line(x,y,x,y-100);
+    line(x,y-100,x+50,y-150);
+  }
+  public void go(){
+    line(x,y,x,y-200);
+  }
+  public void curl(){
+    line(x,y,x,y-100);
+    line(x,y-100,x-50,y-50);
+  }
+  public void comeback(){
+    line(x,y,x,y-100);
+    line(x,y-100,x+50,y-50);
+  }
+  public void in(){
+    line(x,y,x,y-100);
+    line(x,y-100,x-100,y-100);
+  }
+  public void out(){
+    line(x,y,x,y-100);
+    line(x,y-100,x+100,y-100);
+  }
+  public void slant(){
+    line(x,y,x,y-50);
+    line(x,y-50,x-50,y-75);
+  }
+  public void flat(){
+    line(x,y,x,y-30);
+    line(x,y-30,x+50,y-30);
+  }
+  public void hitch(){
+    line(x,y,x,y-100);
+    fill(255);
+    circle(x, y-100, 25);
+    fill(0);
+  }
+  public void wheel(){
+    line(x,y,x-50,y-50);
+    line(x-50,y-50,x-50,y-150);
+  }
 }
 class Team {
   ArrayList<Player> team;

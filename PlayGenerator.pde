@@ -10,7 +10,7 @@ enum states{
   generate,
   plays
 }
-states currentState = states.plays;
+states currentState = states.question1;
 Player p;
 Team t;
 Questionnaire q;
