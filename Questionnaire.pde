@@ -145,7 +145,7 @@ class Questionnaire{
         routeList[i].show();
         if(routeList[i].clicked()== true){
           answers[3] = routeList[i].t;
-          currentState = states.question4;
+          currentState = states.question5;
         }
       } 
     }
@@ -178,7 +178,7 @@ class Questionnaire{
         routeList[i].show();
         if(routeList[i].clicked()== true){
           answers[4] = routeList[i].t;
-          currentState = states.question4;
+          currentState = states.question6;
         }
       } 
     }
@@ -195,7 +195,7 @@ class Questionnaire{
         routeList[i].show();
         if(routeList[i].clicked()== true){
           answers[5] = routeList[i].t;
-          currentState = states.question4;
+          currentState = states.question7;
         }
       } 
     }
@@ -212,7 +212,7 @@ class Questionnaire{
         routeList[i].show();
         if(routeList[i].clicked()== true){
           answers[6] = routeList[i].t;
-          currentState = states.question4;
+          currentState = states.generate;
         }
       } 
     }

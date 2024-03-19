@@ -91,7 +91,6 @@ void draw(){
       
     break;
     case plays:
-      t.tFormation();
       t.show();
     break;
   }
