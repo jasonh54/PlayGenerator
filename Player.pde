@@ -96,10 +96,10 @@ class Team {
     team.add(new Player(370, 360));
     team.add(new Player(340, 360));
     team.add(new Player(250, 380,"TE"));
-    team.add(new Player(220, 360,"WR"));
-    team.add(new Player(190, 380,"WR"));
+    team.add(new Player(220, 360,"Y"));
+    team.add(new Player(190, 380,"Z"));
     team.add(new Player(400, 440,"RB"));
-    team.add(new Player(520, 360,"WR"));
+    team.add(new Player(520, 360,"X"));
     
   }
   public void twins() {
@@ -109,11 +109,11 @@ class Team {
     team.add(new Player(460, 360));
     team.add(new Player(370, 360));
     team.add(new Player(340, 360));
-    team.add(new Player(220, 360,"WR"));
-    team.add(new Player(190, 380,"WR"));
+    team.add(new Player(220, 360,"Y"));
+    team.add(new Player(190, 380,"Z"));
     team.add(new Player(400, 440,"RB"));
     team.add(new Player(550, 380,"TE"));
-    team.add(new Player(580, 360,"WR"));
+    team.add(new Player(580, 360,"X"));
   }
   public void twentyOnePersonnel() {
     team.add(new Player(400, 400,"QB"));
@@ -123,23 +123,23 @@ class Team {
     team.add(new Player(370, 360));
     team.add(new Player(340, 360));
     team.add(new Player(490, 360,"TE"));
-    team.add(new Player(520, 380,"WR"));
-    team.add(new Player(220, 360,"WR"));
+    team.add(new Player(520, 380,"Y"));
+    team.add(new Player(220, 360,"X"));
     team.add(new Player(430, 410,"FB"));
     team.add(new Player(400, 440,"RB"));
   }
   public void proSet() {
     team.add(new Player(400, 400,"QB"));
     team.add(new Player(430, 430,"FB"));
-    team.add(new Player(370, 430,"HB"));
+    team.add(new Player(370, 430,"RB"));
     team.add(new Player(400, 360));
     team.add(new Player(430, 360));
     team.add(new Player(460, 360));
     team.add(new Player(370, 360));
     team.add(new Player(340, 360));
     team.add(new Player(490, 360,"TE"));
-    team.add(new Player(220, 360,"WR"));  
-    team.add(new Player(580, 380,"WR"));
+    team.add(new Player(220, 360,"X"));  
+    team.add(new Player(580, 380,"Y"));
   }
   public void singleback() {
     team.add(new Player(400, 400,"QB"));
@@ -148,10 +148,10 @@ class Team {
     team.add(new Player(460, 360));
     team.add(new Player(370, 360));
     team.add(new Player(340, 360));
-    team.add(new Player(220, 360,"WR"));
-    team.add(new Player(190, 380,"WR"));
-    team.add(new Player(400, 440,"HB"));
-    team.add(new Player(550, 380,"WR"));
+    team.add(new Player(220, 360,"Y"));
+    team.add(new Player(190, 380,"X"));
+    team.add(new Player(400, 440,"RB"));
+    team.add(new Player(550, 380,"Z"));
     team.add(new Player(490, 360,"TE"));
   }
   public void iFormation() {
@@ -161,22 +161,22 @@ class Team {
     team.add(new Player(460, 360));
     team.add(new Player(370, 360));
     team.add(new Player(340, 360));
-    team.add(new Player(490, 360,"TE"));
+    team.add(new Player(490, 360,"Y"));
     team.add(new Player(310, 360,"TE"));
-    team.add(new Player(220, 380,"WR"));
-    team.add(new Player(400, 480,"HB"));
+    team.add(new Player(220, 380,"X"));
+    team.add(new Player(400, 480,"RB"));
     team.add(new Player(400, 440,"FB"));
   }
   public void tFormation() {
     team.add(new Player(400, 400,"QB"));
-    team.add(new Player(430, 430,"HB"));
-    team.add(new Player(370, 430,"HB"));
+    team.add(new Player(430, 430,"RB"));
+    team.add(new Player(370, 430,"X"));
     team.add(new Player(400, 360));
     team.add(new Player(430, 360));
     team.add(new Player(460, 360));
     team.add(new Player(370, 360));
     team.add(new Player(340, 360));
-    team.add(new Player(490, 360,"TE"));
+    team.add(new Player(490, 360,"Y"));
     team.add(new Player(400, 430,"FB"));  
     team.add(new Player(310, 360,"TE"));
   }
@@ -188,10 +188,10 @@ class Team {
     team.add(new Player(370, 360));
     team.add(new Player(340, 360));
     team.add(new Player(490, 360));
-    team.add(new Player(580, 380));
-    team.add(new Player(220, 380));
-    team.add(new Player(430, 420));
-    team.add(new Player(250, 360));
+    team.add(new Player(580, 380,"X"));
+    team.add(new Player(220, 380,"Z"));
+    team.add(new Player(430, 420,"RB"));
+    team.add(new Player(250, 360,"Y"));
   }
   public void pistol() {
     team.add(new Player(400, 400,"QB"));
@@ -200,11 +200,11 @@ class Team {
     team.add(new Player(460, 360));
     team.add(new Player(370, 360));
     team.add(new Player(340, 360));
-    team.add(new Player(220, 380));
-    team.add(new Player(190, 360));
-    team.add(new Player(400, 440));
-    team.add(new Player(550, 380));
-    team.add(new Player(490, 360));
+    team.add(new Player(220, 380,"Y"));
+    team.add(new Player(190, 360,"Z"));
+    team.add(new Player(400, 440,"RB"));
+    team.add(new Player(550, 380,"X"));
+    team.add(new Player(490, 360,"TE"));
   }
   public void wingT() {
     team.add(new Player(400, 400,"QB"));
@@ -213,11 +213,11 @@ class Team {
     team.add(new Player(460, 360));
     team.add(new Player(370, 360));
     team.add(new Player(340, 360));
-    team.add(new Player(490, 360));
-    team.add(new Player(520, 380));
-    team.add(new Player(220, 360));
-    team.add(new Player(370, 440));
-    team.add(new Player(400, 440));
+    team.add(new Player(490, 360,"TE"));
+    team.add(new Player(520, 380,"Y"));
+    team.add(new Player(220, 360,"X"));
+    team.add(new Player(370, 440,"FB"));
+    team.add(new Player(400, 440,"RB"));
   }
   public void slotT() {
     team.add(new Player(400, 400,"QB"));
@@ -226,11 +226,11 @@ class Team {
     team.add(new Player(460, 360));
     team.add(new Player(370, 360));
     team.add(new Player(340, 360));
-    team.add(new Player(310, 380));
-    team.add(new Player(220, 360));
-    team.add(new Player(580, 360));
-    team.add(new Player(520, 380));
-    team.add(new Player(400, 440));
+    team.add(new Player(310, 380,"TE"));
+    team.add(new Player(220, 360,"X"));
+    team.add(new Player(580, 360,"Y"));
+    team.add(new Player(520, 380,"TE"));
+    team.add(new Player(400, 440,"RB"));
   }
   public void doubleWing() {
     team.add(new Player(400, 400,"QB"));
@@ -241,8 +241,8 @@ class Team {
     team.add(new Player(340, 360));
     team.add(new Player(310, 360,"TE"));
     team.add(new Player(490, 360,"TE"));
-    team.add(new Player(280, 380,"WR"));
-    team.add(new Player(520, 380,"WR"));
+    team.add(new Player(280, 380,"X"));
+    team.add(new Player(520, 380,"Y"));
     team.add(new Player(400, 440,"RB"));
   }
   public void show() {
