@@ -114,9 +114,10 @@ class Player {
     line(x, y, x+100, y-50);
     line(x+100, y-50, x+100, y-150);
   }
-  public void rightOut() {
-    line(x, y, x-50, y-100);
-    line(x-100, y-50, x-100, y-150);
+
+  public void rightOut(){
+    line(x,y,x-100,y-50);
+    line(x-100,y-50,x-100,y-150);
   }
 }
 class Team {
