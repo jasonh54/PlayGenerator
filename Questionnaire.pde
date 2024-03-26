@@ -3,6 +3,9 @@ class Questionnaire{
   String[] playType={"Pass", "Run"};
   String[] route={"Post", "Corner", "Go", "Curl", "Comeback", "In", "Out", "Slant", "Hitch", "Wheel", "Flat"};
   String[] other={"Strong","Quick","Agile","Good Hands","Tall","Good Blocker"};
+  String[] qbA={"Smart", "Strong Arm","Throws Accurately", "Quick"};
+  String[] rbA={"Agile", "Quick", "Strong", "Big"};
+  String[] olA={"Big", "Great Pass Blockers", "Great Run Blockers", "Fast", "Strong"};
   String[] direction={"Right","Left"};
   String[] inNOut={"Inside","Outside"};
   Button[] formationList=new Button[formations.length];
