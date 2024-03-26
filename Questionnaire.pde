@@ -168,7 +168,7 @@ class Questionnaire{
         text("What is your Z-Receiver running?",400,50);
       }
       else if(answers[0]=="Double Wing"){
-        text("What is your Tight End running?",400,50);
+        text("What is your Tight End (2) running?",400,50);
       }
       else if(answers[0]=="21 Personnel" || answers[0]=="Pro Set" || answers[0]=="Power I" || answers[0]=="T Formation" || answers[0]=="Wing T"){
         text("What is your Fullback running?",400,50);
@@ -189,7 +189,7 @@ class Questionnaire{
   public void showQ6(){
     textSize(40);
     if(answers[1]=="Pass"){
-      text("What is your Tight End running?",400,50);
+      text("What is your Tight End (1) running?",400,50);
       textSize(16);
       for(int i=0; i<route.length;i++){
         routeList[i].show();
