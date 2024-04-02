@@ -6,6 +6,11 @@ class Questionnaire{
   String[] qbA={"Smart", "Strong Arm","Throws Accurately", "Quick"};
   String[] rbA={"Agile", "Quick", "Strong", "Big"};
   String[] olA={"Big", "Great Pass Blockers", "Great Run Blockers", "Fast", "Strong"};
+  String[] qtr={"1st","2nd","3rd","4th"};
+  String[] time={"15 min to 10 min", "10 min to 5 min", "5 min to 2 min", "under 2 min"};
+  String[] down={"1st","2nd","3rd","4th"};
+  String[] distance={"1-3", "4-7", "8-9", "10", "11-12", "13-14", "15+"};
+  String[] score={"Losing by 3+ scores", "Losing by 2 scores", "Losing by 1 score", "Losing by 3 or less", "Tied", "Winning by 3 or less", "Winning by 1 score", "Winning by 2 scores", "Winning by 3+ scores"};
   String[] direction={"Right","Left"};
   String[] inNOut={"Inside","Outside"};
   Button[] formationList=new Button[formations.length];
@@ -17,7 +22,13 @@ class Questionnaire{
   Button[] qbAList=new Button[qbA.length];
   Button[] olAList=new Button[olA.length];
   Button[] rbAList=new Button[rbA.length];
+  Button[] qtrList=new Button[qtr.length];
+  Button[] timeList=new Button[time.length];
+  Button[] downList=new Button[down.length];
+  Button[] distanceList=new Button[distance.length];
+  Button[] scoreList=new Button[score.length];
   String[] answers = new String[7];
+  String[] answers2=new String[11];
   public Questionnaire(){
     int x=200;
     int y=100;
@@ -134,6 +145,94 @@ class Questionnaire{
     //  rbAList[i]=new Button(x,y,150,80,rbA[i]);
     //  y=y+100;
     //}
+    ////
+    
+    
+    
+    
+    
+    
+    //x=200;
+    //y=100;
+    //for(int i=0; i<2;i++){
+    //  qtrList[i]=new Button(x,y,150,80,qtr[i]);
+    //  y=y+100;
+    //}
+    //x=500;
+    //y=100;
+    //for(int i=1; i<qbA.length;i++){
+    //  qbAList[i]=new Button(x,y,150,80,qbA[i]);
+    //  y=y+100;
+    //}
+    
+    ////
+    //x=200;
+    //y=100;
+    //for(int i=0; i<3;i++){
+    //  olAList[i]=new Button(x,y,150,80,olA[i]);
+    //  y=y+100;
+    //}
+    //x=500;
+    //y=100;
+    //for(int i=1; i<olA.length;i++){
+    //  olAList[i]=new Button(x,y,150,80,olA[i]);
+    //  y=y+100;
+    //}
+    
+    //x=200;
+    //y=100;
+    //for(int i=0; i<2;i++){
+    //  rbAList[i]=new Button(x,y,150,80,rbA[i]);
+    //  y=y+100;
+    //}
+    //x=500;
+    //y=100;
+    //for(int i=1; i<rbA.length;i++){
+    //  rbAList[i]=new Button(x,y,150,80,rbA[i]);
+    //  y=y+100;
+    //}
+    ////
+    //x=200;
+    //y=100;
+    //for(int i=0; i<2;i++){
+    //  qbAList[i]=new Button(x,y,150,80,qbA[i]);
+    //  y=y+100;
+    //}
+    //x=500;
+    //y=100;
+    //for(int i=1; i<qbA.length;i++){
+    //  qbAList[i]=new Button(x,y,150,80,qbA[i]);
+    //  y=y+100;
+    //}
+    
+    ////
+    //x=200;
+    //y=100;
+    //for(int i=0; i<3;i++){
+    //  olAList[i]=new Button(x,y,150,80,olA[i]);
+    //  y=y+100;
+    //}
+    //x=500;
+    //y=100;
+    //for(int i=1; i<olA.length;i++){
+    //  olAList[i]=new Button(x,y,150,80,olA[i]);
+    //  y=y+100;
+    //}
+    
+    //x=200;
+    //y=100;
+    //for(int i=0; i<2;i++){
+    //  rbAList[i]=new Button(x,y,150,80,rbA[i]);
+    //  y=y+100;
+    //}
+    //x=500;
+    //y=100;
+    //for(int i=1; i<rbA.length;i++){
+    //  rbAList[i]=new Button(x,y,150,80,rbA[i]);
+    //  y=y+100;
+    //}
+    
+    
   }
   public void showQ1(){
     textSize(40);
