@@ -15,6 +15,8 @@ enum states{
   aQuestion6,
   aQuestion7,
   aQuestion8,
+  aQuestion9,
+  aQuestion10,
   generate,
   plays
 }
