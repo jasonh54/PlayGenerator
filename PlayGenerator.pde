@@ -7,6 +7,14 @@ enum states{
   question5,
   question6,
   question7,
+  aQuestion1,
+  aQuestion2,
+  aQuestion3,
+  aQuestion4,
+  aQuestion5,
+  aQuestion6,
+  aQuestion7,
+  aQuestion8,
   generate,
   plays
 }
