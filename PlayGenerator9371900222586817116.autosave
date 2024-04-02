@@ -7,21 +7,13 @@ enum states{
   question5,
   question6,
   question7,
-  aQuestion1,
-  aQuestion2,
-  aQuestion3,
-  aQuestion4,
-  aQuestion5,
-  aQuestion6,
-  aQuestion7,
-  aQuestion8,
   generate,
   plays
 }
 states currentState = states.mainMenu;
 Player p;
 Team t;
-Button resetB,start;
+Button resetB,start,adv;
 Questionnaire q;
 boolean mouseDown;
 void setup(){
@@ -30,7 +22,8 @@ void setup(){
   p = new Player(400,400);
   t = new Team();  
   resetB= new Button(630,20,150,80,"Reset");
-  start = new Button(300,400,150,80,"Start");
+  start = new Button(325,400,150,80,"Start");
+  adv = new Button(363,500,75,40,"Adv.");
 }
 
 void draw(){
@@ -42,6 +35,8 @@ void draw(){
       textSize(50);
       text("Play Generator",400,300);
       start.show();
+      textSize(25);
+      adv.show();
       if(start.clicked()){
          currentState=states.question1;
       }
@@ -112,7 +107,6 @@ void draw(){
       t.show();
       resetB.show();
       if(resetB.clicked()){
-         t.reset();
          currentState=states.mainMenu;
       }
     break;

@@ -531,4 +531,7 @@ class Team {
       team.get(g).show();
     }
   }
+  public void reset(){
+    team.clear();
+  }
 }
