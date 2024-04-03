@@ -15,25 +15,22 @@ enum states{
   aQuestion6,
   aQuestion7,
   aQuestion8,
-  aQuestion9,
-  aQuestion10,
   generate,
   plays
 }
 states currentState = states.mainMenu;
 Player p;
 Team t;
-Button resetB,start,adv;
+Button resetB,start;
 Questionnaire q;
-boolean mouseDown,advM;
+boolean mouseDown;
 void setup(){
   size(800,800);
   q = new Questionnaire();
   p = new Player(400,400);
   t = new Team();  
   resetB= new Button(630,20,150,80,"Reset");
-  start = new Button(325,400,150,80,"Start");
-  adv = new Button(363,500,75,40,"Adv.");
+  start = new Button(300,400,150,80,"Start");
 }
 
 void draw(){
@@ -45,14 +42,8 @@ void draw(){
       textSize(50);
       text("Play Generator",400,300);
       start.show();
-      textSize(25);
-      adv.show();
       if(start.clicked()){
          currentState=states.question1;
-      }
-      if(adv.clicked()){
-        advM = true;
-         currentState=states.aQuestion1;
       }
     break;
     case question1:
@@ -77,7 +68,6 @@ void draw(){
       q.showQ7();
     break;
     case generate:
-      //finish this
       if(q.answers[0]=="Trips"){
         t.trips();
       }
@@ -113,11 +103,6 @@ void draw(){
       }
       if(q.answers[0]=="Double Wing"){
         t.doubleWing();
-      }
-      //check if advanced mode was used
-      //
-      if(advM == true){
-        t.applyAtr();
       }
       currentState=states.plays;
       

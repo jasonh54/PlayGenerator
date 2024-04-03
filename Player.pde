@@ -3,6 +3,7 @@ class Player {
   float x;
   float y;
   String r;
+  String atr;
   public Player(float xpos, float ypos, String role) {
     x = xpos;
     y = ypos;
@@ -12,6 +13,9 @@ class Player {
     x = xpos;
     y = ypos;
     r = "OL";
+  }
+  public void setAtr(String a){
+    atr = a;
   }
   public void show() {
     fill(255);
@@ -280,6 +284,28 @@ class Team {
     team.add(new Player(280, 380, "X"));
     team.add(new Player(520, 380, "Y"));
     team.add(new Player(400, 440, "RB"));
+  }
+  public void applyAtr(){
+    for(int i = 0; i<team.size();i++){
+      if(team.get(i).r=="QB"){
+        team.get(i).atr=q.answers2[5];
+      }
+      if(team.get(i).r=="RB"){
+        team.get(i).atr=q.answers2[6];
+      }
+      if(team.get(i).r=="WR"){
+        team.get(i).atr=q.answers2[7];
+      }
+      if(team.get(i).r=="TE"){
+        team.get(i).atr=q.answers2[8];
+      }
+      if(team.get(i).r=="FB"){
+        team.get(i).atr=q.answers2[9];
+      }
+      if(team.get(i).r=="OL"){
+        team.get(i).atr=q.answers2[10];
+      }
+    }
   }
   public void show() {
     for (int g=0; g<team.size(); g++) {
