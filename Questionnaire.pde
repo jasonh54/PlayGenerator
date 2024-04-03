@@ -114,7 +114,7 @@ class Questionnaire{
     //}
     //x=500;
     //y=100;
-    //for(int i=1; i<qbA.length;i++){
+    //for(int i=2; i<qbA.length;i++){
     //  qbAList[i]=new Button(x,y,150,80,qbA[i]);
     //  y=y+100;
     //}
@@ -128,7 +128,7 @@ class Questionnaire{
     //}
     //x=500;
     //y=100;
-    //for(int i=1; i<olA.length;i++){
+    //for(int i=3; i<olA.length;i++){
     //  olAList[i]=new Button(x,y,150,80,olA[i]);
     //  y=y+100;
     //}
@@ -141,7 +141,7 @@ class Questionnaire{
     //}
     //x=500;
     //y=100;
-    //for(int i=1; i<rbA.length;i++){
+    //for(int i=2; i<rbA.length;i++){
     //  rbAList[i]=new Button(x,y,150,80,rbA[i]);
     //  y=y+100;
     //}
@@ -160,77 +160,65 @@ class Questionnaire{
     //}
     //x=500;
     //y=100;
-    //for(int i=1; i<qbA.length;i++){
-    //  qbAList[i]=new Button(x,y,150,80,qbA[i]);
+    //for(int i=2; i<qtr.length;i++){
+    //  qtrList[i]=new Button(x,y,150,80,qtr[i]);
     //  y=y+100;
     //}
     
     ////
     //x=200;
     //y=100;
-    //for(int i=0; i<3;i++){
-    //  olAList[i]=new Button(x,y,150,80,olA[i]);
+    //for(int i=0; i<2;i++){
+    //  timeList[i]=new Button(x,y,150,80,time[i]);
     //  y=y+100;
     //}
     //x=500;
     //y=100;
-    //for(int i=1; i<olA.length;i++){
-    //  olAList[i]=new Button(x,y,150,80,olA[i]);
+    //for(int i=2; i<time.length;i++){
+    //  timeList[i]=new Button(x,y,150,80,time[i]);
     //  y=y+100;
     //}
     
     //x=200;
     //y=100;
     //for(int i=0; i<2;i++){
-    //  rbAList[i]=new Button(x,y,150,80,rbA[i]);
+    //  downList[i]=new Button(x,y,150,80,down[i]);
     //  y=y+100;
     //}
     //x=500;
     //y=100;
-    //for(int i=1; i<rbA.length;i++){
-    //  rbAList[i]=new Button(x,y,150,80,rbA[i]);
+    //for(int i=2; i<down.length;i++){
+    //  downList[i]=new Button(x,y,150,80,down[i]);
     //  y=y+100;
     //}
     ////
     //x=200;
     //y=100;
-    //for(int i=0; i<2;i++){
-    //  qbAList[i]=new Button(x,y,150,80,qbA[i]);
+    //for(int i=0; i<4;i++){
+    //  distanceList[i]=new Button(x,y,150,80,distance[i]);
     //  y=y+100;
     //}
     //x=500;
     //y=100;
-    //for(int i=1; i<qbA.length;i++){
-    //  qbAList[i]=new Button(x,y,150,80,qbA[i]);
+    //for(int i=4; i<distance.length;i++){
+    //  distanceList[i]=new Button(x,y,150,80,distance[i]);
     //  y=y+100;
     //}
     
     ////
     //x=200;
     //y=100;
-    //for(int i=0; i<3;i++){
-    //  olAList[i]=new Button(x,y,150,80,olA[i]);
+    //for(int i=0; i<5;i++){
+    //  scoreList[i]=new Button(x,y,150,80,score[i]);
     //  y=y+100;
     //}
     //x=500;
     //y=100;
-    //for(int i=1; i<olA.length;i++){
-    //  olAList[i]=new Button(x,y,150,80,olA[i]);
+    //for(int i=5; i<score.length;i++){
+    //  scoreList[i]=new Button(x,y,150,80,score[i]);
     //  y=y+100;
     //}
     
-    //x=200;
-    //y=100;
-    //for(int i=0; i<2;i++){
-    //  rbAList[i]=new Button(x,y,150,80,rbA[i]);
-    //  y=y+100;
-    //}
-    //x=500;
-    //y=100;
-    //for(int i=1; i<rbA.length;i++){
-    //  rbAList[i]=new Button(x,y,150,80,rbA[i]);
-    //  y=y+100;
-    //}
     
     
   }
@@ -366,6 +354,138 @@ class Questionnaire{
     else{
       currentState=states.generate;
     }
+  }
+    public void showAQ1(){
+    textSize(40);
+    text("What is the quarter?",400,50);
+    textSize(16);
+    for(int i=0; i<qtr.length;i++){
+      qtrList[i].show();
+      if(qtrList[i].clicked()== true){
+        answers2[0] = qtrList[i].t;
+        currentState = states.aQuestion2;
+      }
+    }  
+  }
+  public void showAQ2(){
+    textSize(40);
+    text("What is the time?",400,50);
+    textSize(16);
+    for(int i=0; i<time.length;i++){
+      timeList[i].show();
+      if(timeList[i].clicked()== true){
+        answers2[1] = timeList[i].t;
+        currentState = states.aQuestion3;
+      }
+    } 
+  }
+  public void showAQ3(){
+    textSize(40);
+    text("What is the down?",400,50);
+    textSize(16);
+    for(int i=0; i<down.length;i++){
+      downList[i].show();
+      if(downList[i].clicked()== true){
+        answers2[2] = downList[i].t;
+        currentState = states.aQuestion4;
+      }
+    }
+  }
+  public void showAQ4(){
+    textSize(40);
+    text("What is the distance?",400,50);
+    textSize(16);
+    for(int i=0; i<distance.length;i++){
+      distanceList[i].show();
+      if(distanceList[i].clicked()== true){
+        answers2[3] = distanceList[i].t;
+        currentState = states.aQuestion5;
+      }
+    } 
+  }
+  public void showAQ5(){
+    textSize(40);
+    text("What is the score?",400,50);
+    textSize(16);
+    for(int i=0; i<score.length;i++){
+      scoreList[i].show();
+      if(scoreList[i].clicked()== true){
+        answers2[4] = scoreList[i].t;
+        currentState = states.aQuestion6;
+      }
+    }
+  }
+  public void showAQ6(){
+    textSize(40);
+    text("What is your Quarterback's best attribute?",400,50);
+    textSize(16);
+    for(int i=0; i<qbA.length;i++){
+      qbAList[i].show();
+      if(qbAList[i].clicked()== true){
+        answers2[5] = qbAList[i].t;
+        currentState = states.aQuestion7;
+      }
+    } 
+  }
+  public void showAQ7(){
+    textSize(40);
+    text("What is your Runningback's best attribute?",400,50);
+    textSize(16);
+    for(int i=0; i<rbA.length;i++){
+      rbAList[i].show();
+      if(rbAList[i].clicked()== true){
+        answers2[6] = rbAList[i].t;
+        currentState = states.aQuestion8;
+      }
+    } 
+  }
+  public void showAQ8(){
+    textSize(40);
+    text("What are your Wide Receivers' best attribute?",400,50);
+    textSize(16);
+    for(int i=0; i<other.length;i++){
+      otherList[i].show();
+      if(otherList[i].clicked()== true){
+        answers2[7] = otherList[i].t;
+        currentState = states.aQuestion9;
+      }
+    } 
+  }
+  public void showAQ9(){
+    textSize(40);
+    text("What are your Tight Ends' best attribute?",400,50);
+    textSize(16);
+    for(int i=0; i<other.length;i++){
+      otherList[i].show();
+      if(otherList[i].clicked()== true){
+        answers2[8] = otherList[i].t;
+        currentState = states.aQuestion10;
+      }
+    } 
+  }
+  public void showAQ10(){
+    textSize(40);
+    text("What is your Fullback's best attribute?",400,50);
+    textSize(16);
+    for(int i=0; i<other.length;i++){
+      otherList[i].show();
+      if(otherList[i].clicked()== true){
+        answers2[9] = otherList[i].t;
+        currentState = states.aQuestion11;
+      }
+    } 
+  }
+  public void showAQ11(){
+    textSize(40);
+    text("What is your Oline's best attribute?",400,50);
+    textSize(16);
+    for(int i=0; i<olA.length;i++){
+      olAList[i].show();
+      if(olAList[i].clicked()== true){
+        answers2[10] = olAList[i].t;
+        currentState = states.generate;
+      }
+    } 
   }
 }
 class Button{
