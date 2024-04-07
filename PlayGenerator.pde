@@ -17,6 +17,9 @@ enum states{
   aQuestion8,
   aQuestion9,
   aQuestion10,
+  aQuestion11,
+  aQuestion12,
+  aQuestion13,
   generate,
   plays
 }
@@ -76,8 +79,46 @@ void draw(){
     case question7:
       q.showQ7();
     break;
+    case aQuestion1:
+      q.showAQ1();
+    break;
+    case aQuestion2:
+      q.showAQ2();
+    break;
+    case aQuestion3:
+      q.showAQ3();
+    break;
+    case aQuestion4:
+      q.showAQ4();
+    break;
+    case aQuestion5:
+      q.showAQ5();
+    break;
+    case aQuestion6:
+      q.showAQ6();
+    break;
+    case aQuestion7:
+      q.showAQ7();
+    break;
+    case aQuestion8:
+      q.showAQ8();
+    break;
+    case aQuestion9:
+      q.showAQ9();
+    break;
+    case aQuestion10:
+      q.showAQ10();
+    break;
+    case aQuestion11:
+      q.showAQ11();
+    break;
+    case aQuestion12:
+      q.showAQ12();
+    break;
+    case aQuestion13:
+      q.showAQ13();
+    break;
     case generate:
-      //finish this
       if(q.answers[0]=="Trips"){
         t.trips();
       }
@@ -114,8 +155,6 @@ void draw(){
       if(q.answers[0]=="Double Wing"){
         t.doubleWing();
       }
-      //check if advanced mode was used
-      //
       if(advM == true){
         t.applyAtr();
       }
