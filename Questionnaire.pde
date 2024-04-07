@@ -3,6 +3,8 @@ class Questionnaire{
   String[] playType={"Pass", "Run"};
   String[] route={"Post", "Corner", "Go", "Curl", "Comeback", "In", "Out", "Slant", "Hitch", "Wheel", "Flat"};
   String[] other={"Strong","Quick","Agile","Good Hands","Tall","Good Blocker"};
+  String[] defense={"Cover 0", "Cover 1", "Cover 2", "Cover 3", "Cover 4", "Cover 6"};
+  String[] mOrZ={"Man", "Zone"};
   String[] qbA={"Smart", "Strong Arm","Throws Accurately", "Quick"};
   String[] rbA={"Agile", "Quick", "Strong", "Big"};
   String[] olA={"Big", "Great Pass Blockers", "Great Run Blockers", "Fast", "Strong"};
@@ -19,6 +21,8 @@ class Questionnaire{
   Button[] otherList=new Button[other.length];
   Button[] directionList=new Button[direction.length];
   Button[] inNOutList=new Button[inNOut.length];
+  Button[] defenseList=new Button[defense.length];
+  Button[] mOrZList=new Button[mOrZ.length];
   Button[] qbAList=new Button[qbA.length];
   Button[] olAList=new Button[olA.length];
   Button[] rbAList=new Button[rbA.length];
@@ -219,6 +223,30 @@ class Questionnaire{
     //  y=y+100;
     //}
     
+    //x=200;
+    //y=100;
+    //for(int i=0; i<1;i++){
+    //  mOrZList[i]=new Button(x,y,150,80,mOrZ[i]);
+    //  y=y+100;
+    //}
+    //x=500;
+    //y=100;
+    //for(int i=1; i<mOrZ.length;i++){
+    //  mOrZList[i]=new Button(x,y,150,80,mOrZ[i]);
+    //  y=y+100;
+    //}
+    //x=200;
+    //y=100;
+    //for(int i=0; i<3;i++){
+    //  defenseList[i]=new Button(x,y,150,80,defense[i]);
+    //  y=y+100;
+    //}
+    //x=500;
+    //y=100;
+    //for(int i=3; i<defense.length;i++){
+    //  defenseList[i]=new Button(x,y,150,80,defense[i]);
+    //  y=y+100;
+    //}
     
     
   }
@@ -483,6 +511,30 @@ class Questionnaire{
       olAList[i].show();
       if(olAList[i].clicked()== true){
         answers2[10] = olAList[i].t;
+        currentState = states.generate;
+      }
+    } 
+  }
+  public void showAQ12(){
+    textSize(40);
+    text("What Coverage are they in?",400,50);
+    textSize(16);
+    for(int i=0; i<defense.length;i++){
+      defenseList[i].show();
+      if(defenseList[i].clicked()== true){
+        answers2[11] = defenseList[i].t;
+        currentState = states.generate;
+      }
+    } 
+  }
+  public void showAQ13(){
+    textSize(40);
+    text("Is it a man or Zone?",400,50);
+    textSize(16);
+    for(int i=0; i<mOrZ.length;i++){
+      mOrZList[i].show();
+      if(mOrZList[i].clicked()== true){
+        answers2[12] = mOrZList[i].t;
         currentState = states.generate;
       }
     } 
