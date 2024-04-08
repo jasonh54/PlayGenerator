@@ -15,28 +15,22 @@ enum states{
   aQuestion6,
   aQuestion7,
   aQuestion8,
-  aQuestion9,
-  aQuestion10,
-  aQuestion11,
-  aQuestion12,
-  aQuestion13,
   generate,
   plays
 }
 states currentState = states.mainMenu;
 Player p;
 Team t;
-Button resetB,start,adv;
+Button resetB,start;
 Questionnaire q;
-boolean mouseDown,advM;
+boolean mouseDown;
 void setup(){
   size(800,800);
   q = new Questionnaire();
   p = new Player(400,400);
   t = new Team();  
   resetB= new Button(630,20,150,80,"Reset");
-  start = new Button(325,400,150,80,"Start");
-  adv = new Button(363,500,75,40,"Adv.");
+  start = new Button(300,400,150,80,"Start");
 }
 
 void draw(){
@@ -48,14 +42,8 @@ void draw(){
       textSize(50);
       text("Play Generator",400,300);
       start.show();
-      textSize(25);
-      adv.show();
       if(start.clicked()){
          currentState=states.question1;
-      }
-      if(adv.clicked()){
-        advM = true;
-         currentState=states.aQuestion1;
       }
     break;
     case question1:
@@ -78,45 +66,6 @@ void draw(){
     break;
     case question7:
       q.showQ7();
-    break;
-    case aQuestion1:
-      q.showAQ1();
-    break;
-    case aQuestion2:
-      q.showAQ2();
-    break;
-    case aQuestion3:
-      q.showAQ3();
-    break;
-    case aQuestion4:
-      q.showAQ4();
-    break;
-    case aQuestion5:
-      q.showAQ5();
-    break;
-    case aQuestion6:
-      q.showAQ6();
-    break;
-    case aQuestion7:
-      q.showAQ7();
-    break;
-    case aQuestion8:
-      q.showAQ8();
-    break;
-    case aQuestion9:
-      q.showAQ9();
-    break;
-    case aQuestion10:
-      q.showAQ10();
-    break;
-    case aQuestion11:
-      q.showAQ11();
-    break;
-    case aQuestion12:
-      q.showAQ12();
-    break;
-    case aQuestion13:
-      q.showAQ13();
     break;
     case generate:
       if(q.answers[0]=="Trips"){
@@ -154,9 +103,6 @@ void draw(){
       }
       if(q.answers[0]=="Double Wing"){
         t.doubleWing();
-      }
-      if(advM == true){
-        t.applyAtr();
       }
       currentState=states.plays;
       
