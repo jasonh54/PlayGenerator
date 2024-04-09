@@ -109,144 +109,144 @@ class Questionnaire{
     }
     
     
-    ////
-    //x=200;
-    //y=100;
-    //for(int i=0; i<2;i++){
-    //  qbAList[i]=new Button(x,y,150,80,qbA[i]);
-    //  y=y+100;
-    //}
-    //x=500;
-    //y=100;
-    //for(int i=2; i<qbA.length;i++){
-    //  qbAList[i]=new Button(x,y,150,80,qbA[i]);
-    //  y=y+100;
-    //}
+    //
+    x=200;
+    y=100;
+    for(int i=0; i<2;i++){
+      qbAList[i]=new Button(x,y,150,80,qbA[i]);
+      y=y+100;
+    }
+    x=500;
+    y=100;
+    for(int i=2; i<qbA.length;i++){
+      qbAList[i]=new Button(x,y,150,80,qbA[i]);
+      y=y+100;
+    }
     
-    ////
-    //x=200;
-    //y=100;
-    //for(int i=0; i<3;i++){
-    //  olAList[i]=new Button(x,y,150,80,olA[i]);
-    //  y=y+100;
-    //}
-    //x=500;
-    //y=100;
-    //for(int i=3; i<olA.length;i++){
-    //  olAList[i]=new Button(x,y,150,80,olA[i]);
-    //  y=y+100;
-    //}
+    //
+    x=200;
+    y=100;
+    for(int i=0; i<3;i++){
+      olAList[i]=new Button(x,y,150,80,olA[i]);
+      y=y+100;
+    }
+    x=500;
+    y=100;
+    for(int i=3; i<olA.length;i++){
+      olAList[i]=new Button(x,y,150,80,olA[i]);
+      y=y+100;
+    }
     
-    //x=200;
-    //y=100;
-    //for(int i=0; i<2;i++){
-    //  rbAList[i]=new Button(x,y,150,80,rbA[i]);
-    //  y=y+100;
-    //}
-    //x=500;
-    //y=100;
-    //for(int i=2; i<rbA.length;i++){
-    //  rbAList[i]=new Button(x,y,150,80,rbA[i]);
-    //  y=y+100;
-    //}
-    ////
-    
-    
+    x=200;
+    y=100;
+    for(int i=0; i<2;i++){
+      rbAList[i]=new Button(x,y,150,80,rbA[i]);
+      y=y+100;
+    }
+    x=500;
+    y=100;
+    for(int i=2; i<rbA.length;i++){
+      rbAList[i]=new Button(x,y,150,80,rbA[i]);
+      y=y+100;
+    }
+    //
     
     
     
     
-    //x=200;
-    //y=100;
-    //for(int i=0; i<2;i++){
-    //  qtrList[i]=new Button(x,y,150,80,qtr[i]);
-    //  y=y+100;
-    //}
-    //x=500;
-    //y=100;
-    //for(int i=2; i<qtr.length;i++){
-    //  qtrList[i]=new Button(x,y,150,80,qtr[i]);
-    //  y=y+100;
-    //}
     
-    ////
-    //x=200;
-    //y=100;
-    //for(int i=0; i<2;i++){
-    //  timeList[i]=new Button(x,y,150,80,time[i]);
-    //  y=y+100;
-    //}
-    //x=500;
-    //y=100;
-    //for(int i=2; i<time.length;i++){
-    //  timeList[i]=new Button(x,y,150,80,time[i]);
-    //  y=y+100;
-    //}
     
-    //x=200;
-    //y=100;
-    //for(int i=0; i<2;i++){
-    //  downList[i]=new Button(x,y,150,80,down[i]);
-    //  y=y+100;
-    //}
-    //x=500;
-    //y=100;
-    //for(int i=2; i<down.length;i++){
-    //  downList[i]=new Button(x,y,150,80,down[i]);
-    //  y=y+100;
-    //}
-    ////
-    //x=200;
-    //y=100;
-    //for(int i=0; i<4;i++){
-    //  distanceList[i]=new Button(x,y,150,80,distance[i]);
-    //  y=y+100;
-    //}
-    //x=500;
-    //y=100;
-    //for(int i=4; i<distance.length;i++){
-    //  distanceList[i]=new Button(x,y,150,80,distance[i]);
-    //  y=y+100;
-    //}
+    x=200;
+    y=100;
+    for(int i=0; i<2;i++){
+      qtrList[i]=new Button(x,y,150,80,qtr[i]);
+      y=y+100;
+    }
+    x=500;
+    y=100;
+    for(int i=2; i<qtr.length;i++){
+      qtrList[i]=new Button(x,y,150,80,qtr[i]);
+      y=y+100;
+    }
     
-    ////
-    //x=200;
-    //y=100;
-    //for(int i=0; i<5;i++){
-    //  scoreList[i]=new Button(x,y,150,80,score[i]);
-    //  y=y+100;
-    //}
-    //x=500;
-    //y=100;
-    //for(int i=5; i<score.length;i++){
-    //  scoreList[i]=new Button(x,y,150,80,score[i]);
-    //  y=y+100;
-    //}
+    //
+    x=200;
+    y=100;
+    for(int i=0; i<2;i++){
+      timeList[i]=new Button(x,y,150,80,time[i]);
+      y=y+100;
+    }
+    x=500;
+    y=100;
+    for(int i=2; i<time.length;i++){
+      timeList[i]=new Button(x,y,150,80,time[i]);
+      y=y+100;
+    }
     
-    //x=200;
-    //y=100;
-    //for(int i=0; i<1;i++){
-    //  mOrZList[i]=new Button(x,y,150,80,mOrZ[i]);
-    //  y=y+100;
-    //}
-    //x=500;
-    //y=100;
-    //for(int i=1; i<mOrZ.length;i++){
-    //  mOrZList[i]=new Button(x,y,150,80,mOrZ[i]);
-    //  y=y+100;
-    //}
-    //x=200;
-    //y=100;
-    //for(int i=0; i<3;i++){
-    //  defenseList[i]=new Button(x,y,150,80,defense[i]);
-    //  y=y+100;
-    //}
-    //x=500;
-    //y=100;
-    //for(int i=3; i<defense.length;i++){
-    //  defenseList[i]=new Button(x,y,150,80,defense[i]);
-    //  y=y+100;
-    //}
+    x=200;
+    y=100;
+    for(int i=0; i<2;i++){
+      downList[i]=new Button(x,y,150,80,down[i]);
+      y=y+100;
+    }
+    x=500;
+    y=100;
+    for(int i=2; i<down.length;i++){
+      downList[i]=new Button(x,y,150,80,down[i]);
+      y=y+100;
+    }
+    //
+    x=200;
+    y=100;
+    for(int i=0; i<4;i++){
+      distanceList[i]=new Button(x,y,150,80,distance[i]);
+      y=y+100;
+    }
+    x=500;
+    y=100;
+    for(int i=4; i<distance.length;i++){
+      distanceList[i]=new Button(x,y,150,80,distance[i]);
+      y=y+100;
+    }
+    
+    //
+    x=200;
+    y=100;
+    for(int i=0; i<5;i++){
+      scoreList[i]=new Button(x,y,150,80,score[i]);
+      y=y+100;
+    }
+    x=500;
+    y=100;
+    for(int i=5; i<score.length;i++){
+      scoreList[i]=new Button(x,y,150,80,score[i]);
+      y=y+100;
+    }
+    
+    x=200;
+    y=100;
+    for(int i=0; i<1;i++){
+      mOrZList[i]=new Button(x,y,150,80,mOrZ[i]);
+      y=y+100;
+    }
+    x=500;
+    y=100;
+    for(int i=1; i<mOrZ.length;i++){
+      mOrZList[i]=new Button(x,y,150,80,mOrZ[i]);
+      y=y+100;
+    }
+    x=200;
+    y=100;
+    for(int i=0; i<3;i++){
+      defenseList[i]=new Button(x,y,150,80,defense[i]);
+      y=y+100;
+    }
+    x=500;
+    y=100;
+    for(int i=3; i<defense.length;i++){
+      defenseList[i]=new Button(x,y,150,80,defense[i]);
+      y=y+100;
+    }
     
     
   }
