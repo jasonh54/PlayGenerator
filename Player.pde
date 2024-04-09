@@ -553,6 +553,7 @@ class Team {
         if (team.get(i).r=="TE2" && q.answers[4]=="Out") {
           team.get(i).out();
         }
+        
       }
       team.get(g).show();
     }
