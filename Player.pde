@@ -18,7 +18,24 @@ class Player {
     atr = a;
   }
   public void show() {
-    fill(255);
+    if(r == "QB"){
+      fill(0,255,0);
+    }
+    if(r == "X"||r == "Y"||r == "Z"){
+      fill(0,127,255);
+    }
+    if(r == "TE1"||r == "TE2"){
+      fill(255,0,255);
+    }
+    if(r == "RB"){
+      fill(255,127,0);
+    }
+    if(r == "FB"){
+      fill(255,70,70);
+    }
+    if(r == "OL"){
+      fill(120,120,120);
+    }
     circle(x, y, 25);
     fill(0);
     textAlign(CENTER, CENTER);
@@ -308,6 +325,20 @@ class Team {
     }
   }
   public void show() {
+    fill(255);
+    stroke(255);
+    for(int a=0;a<24;a++){
+      line(0,a*33,800,a*33);
+    }
+    fill(255,70,70);
+    rect(0,0,800,66);
+    rect(0,734,800,66);
+    fill(255);
+    textSize(50);
+    text("TOUCHDOWN",400,33);
+    text("TOUCHDOWN",400,767);
+    textSize(15);
+    stroke(0);
     for (int g=0; g<team.size(); g++) {
       for (int i=0; i<team.size(); i++) {
         if (team.get(i).r=="RB" && q.answers[2]=="Right" && q.answers[3]=="Inside") {
